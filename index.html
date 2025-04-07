@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlowEssence - Luxury Cosmetics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fdf9f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      padding: 25px 50px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #ffd700;
+    }
+
+    nav a {
+      color: #eee;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      background: url('images/banner.jpg') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.5);
+      padding: 20px 40px;
+      border-radius: 15px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      padding: 60px 10%;
+    }
+
+    .product {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 25px;
+    }
+
+    .product h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    .price {
+      font-size: 1.2em;
+      color: #b8860b;
+      margin-top: 15px;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 30px;
+      background-color: #d4af37;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95em;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #a67c00;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GlowEssence</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Collections</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Uncover Your Natural Glow</h2>
+  </div>
+
+  <section class="products">
+    <div class="product">
+      <img src="images/serum.jpg" alt="Radiant Glow Serum">
+      <div class="product-content">
+        <h3>Radiant Glow Serum</h3>
+        <p>Brighten your skin with our best-selling vitamin C serum.</p>
+        <p class="price">$49.99</p>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="images/cream.jpg" alt="Hydra Dew Cream">
+      <div class="product-content">
+        <h3>Hydra Dew Cream</h3>
+        <p>Deep hydration and lasting softness in every drop.</p>
+        <p class="price">$34.99</p>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="images/palette.jpg" alt="Blush Bloom Palette">
+      <div class="product-content">
+        <h3>Blush Bloom Palette</h3>
+        <p>A versatile blend of shades to match every look.</p>
+        <p class="price">$29.99</p>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 GlowEssence. All rights reserved. Designed for beauty.
+  </footer>
+
+</body>
+</html>
